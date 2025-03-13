@@ -19,7 +19,7 @@ pipeline {
                 script {
                     // Ejecutar el comando 'npm test' dentro del contenedor de la aplicación
                     // --rm elimina el contenedor después de completar el comando
-                    sh 'docker compose run --rm app npm test'
+                    sh 'docker run --rm app npm test'
                 }
             }
         }
